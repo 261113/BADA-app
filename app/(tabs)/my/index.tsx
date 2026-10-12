@@ -3,22 +3,22 @@ import { router } from 'expo-router';
 import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import Card from '../../../components/ui/Card';
+import { Card } from '../../../components/ui';
 import { colors, radius, spacing } from '../../../constants/theme';
 
 type MenuItem = {
   icon: keyof typeof Ionicons.glyphMap;
   label: string;
-  path: string;
+  slug: string;
 };
 
 const menu: MenuItem[] = [
-  { icon: 'create-outline', label: '정보 수정', path: '/my/profile-edit' },
-  { icon: 'people-outline', label: '내 메이트', path: '/my/mates' },
-  { icon: 'swap-horizontal-outline', label: '내 거래', path: '/my/trades' },
-  { icon: 'trending-up-outline', label: '내 진로', path: '/my/career' },
-  { icon: 'notifications-outline', label: '알림', path: '/my/notifications' },
-  { icon: 'shield-checkmark-outline', label: '프라이버시', path: '/my/privacy' },
+  { icon: 'create-outline', label: '정보 수정', slug: 'profile-edit' },
+  { icon: 'people-outline', label: '내 메이트', slug: 'mates' },
+  { icon: 'swap-horizontal-outline', label: '내 거래', slug: 'trades' },
+  { icon: 'trending-up-outline', label: '내 진로', slug: 'career' },
+  { icon: 'notifications-outline', label: '알림', slug: 'notifications' },
+  { icon: 'shield-checkmark-outline', label: '프라이버시', slug: 'privacy' },
 ];
 
 export default function MyScreen() {
@@ -44,7 +44,7 @@ export default function MyScreen() {
 
         <View style={styles.menuList}>
           {menu.map((item) => (
-            <Pressable key={item.path} style={styles.menuItem} onPress={() => router.push(item.path as never)}>
+            <Pressable key={item.slug} style={styles.menuItem} onPress={() => router.push(`/my/${item.slug}` as never)}>
               <View style={styles.menuLeft}>
                 <View style={styles.menuIconWrap}>
                   <Ionicons name={item.icon} size={18} color={colors.cobalt} />

@@ -2,7 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams } from 'expo-router';
 import React from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Card from '../../../components/ui/Card';
+import { Card } from '../../../components/ui';
 import { colors, radius, spacing } from '../../../constants/theme';
 import { posts } from '../../../data/mock';
 

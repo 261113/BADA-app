@@ -2,7 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import Chip from '../../../components/ui/Chip';
+import { Chip } from '../../../components/ui';
 import { colors, radius, spacing } from '../../../constants/theme';
 import { categories, mapPlaces } from '../../../data/mock';
 

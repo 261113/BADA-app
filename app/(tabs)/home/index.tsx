@@ -3,9 +3,7 @@ import { router } from 'expo-router';
 import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import Card from '../../../components/ui/Card';
-import SectionHeader from '../../../components/ui/SectionHeader';
-import WatercolorBackground from '../../../components/ui/WatercolorBackground';
+import { Card, SectionHeader, WatercolorBackground } from '../../../components/ui';
 import { colors, radius, spacing } from '../../../constants/theme';
 import { infoItems, posts } from '../../../data/mock';
 
