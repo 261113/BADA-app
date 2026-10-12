@@ -2,8 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { Stack, useLocalSearchParams } from 'expo-router';
 import React, { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Card from '../../../components/ui/Card';
-import Chip from '../../../components/ui/Chip';
+import { Card, Chip } from '../../../components/ui';
 import { colors, spacing } from '../../../constants/theme';
 import { categories, infoItems, infoTypes } from '../../../data/mock';
 

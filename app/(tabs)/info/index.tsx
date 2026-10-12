@@ -3,7 +3,7 @@ import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import TopTabs from '../../../components/ui/TopTabs';
+import { TopTabs } from '../../../components/ui';
 import { colors, radius, spacing } from '../../../constants/theme';
 import { categories } from '../../../data/mock';
 

@@ -1,7 +1,7 @@
 import { router } from 'expo-router';
 import React, { useState } from 'react';
 import { Alert, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
-import Chip from '../../../components/ui/Chip';
+import { Chip } from '../../../components/ui';
 import { colors, radius, spacing } from '../../../constants/theme';
 import { boardTypes } from '../../../data/mock';
 
